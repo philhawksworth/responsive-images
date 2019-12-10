@@ -1,22 +1,24 @@
 const fs    = require('fs');
+const path    = require('path');
+const glob    = require('glob');
 const page  = require('./templates/page.js');
 const image = require('./templates/image.js');
 
 
 const images = function() {
-  let imageHTML = [];
+  var imageHTML = [];
+  var files = glob.sync("dist/img/*.jpg");
+  files.forEach(file => {
 
-  imageHTML.push(image({
-    src: '/img/sarnie-open.jpg',
-    alt: 'an open sandwich'
-  }));
-  imageHTML.push(image({
-    src: '/img/massive-burgers.jpg',
-    alt: 'monsterous burgers'
-  }));
+    imageHTML.push(image({
+      src: `/img/${ path.basename(file) }`,
+      alt: `A tasty sandwich (${ path.basename(file) })`
+    }));
 
+  });
   return imageHTML.join('\n');
 }
+
 
 const html = page({
   title: 'Responsive images FTW!',

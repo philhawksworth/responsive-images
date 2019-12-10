@@ -10,19 +10,17 @@
   </head>
   <body>
     <h1>Responsive Images loaded lazily</h1>
-    <img srcset="/img/sarnie-open.jpg?nf_resize=fit&w=320 320w,
-             /img/sarnie-open.jpg?nf_resize=fit&w=480 480w,
-             /img/sarnie-open.jpg?nf_resize=fit&w=800 800w"
-     sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,
-            800px"
-     src="/img/sarnie-open.jpg?nf_resize=fit&w=480" alt="an open sandwich"></img>
-<img srcset="/img/massive-burgers.jpg?nf_resize=fit&w=320 320w,
-             /img/massive-burgers.jpg?nf_resize=fit&w=480 480w,
-             /img/massive-burgers.jpg?nf_resize=fit&w=800 800w"
-     sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,
-            800px"
-     src="/img/massive-burgers.jpg?nf_resize=fit&w=480" alt="monsterous burgers"></img>
+    <picture>
+  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=1200 media="(min-width: 1200px)">
+  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=700" media="(min-width: 700px)">
+  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=300" media="(min-width: 300px)">
+  <img src="/img/sarnie-open.jpg?nf_resize=fit&w=600" alt="an open sandwich" />
+</picture>
+<picture>
+  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=1200 media="(min-width: 1200px)">
+  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=700" media="(min-width: 700px)">
+  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=300" media="(min-width: 300px)">
+  <img src="/img/massive-burgers.jpg?nf_resize=fit&w=600" alt="monsterous burgers" />
+</picture>
   </body>
   </html>

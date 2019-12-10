@@ -1,8 +1,7 @@
 module.exports = (data) =>
-`<img srcset="${data.src}?nf_resize=fit&w=320 320w,
-             ${data.src}?nf_resize=fit&w=480 480w,
-             ${data.src}?nf_resize=fit&w=800 800w"
-     sizes="(max-width: 320px) 280px,
-            (max-width: 480px) 440px,
-            800px"
-     src="${data.src}?nf_resize=fit&w=480" alt="${data.alt}"></img>`;
+`<picture>
+  <source srcset="${data.src}?nf_resize=fit&w=1200 media="(min-width: 1200px)">
+  <source srcset="${data.src}?nf_resize=fit&w=700" media="(min-width: 700px)">
+  <source srcset="${data.src}?nf_resize=fit&w=300" media="(min-width: 300px)">
+  <img src="${data.src}?nf_resize=fit&w=600" alt="${data.alt}" />
+</picture>`;

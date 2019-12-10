@@ -9,12 +9,16 @@ const images = function() {
     src: '/img/sarnie-open.jpg',
     alt: 'an open sandwich'
   }));
-  for (let index = 0; index < 5; index++) {
-    imageHTML.push( image({
-      src: `/img/${index}.jpg`,
-      alt: `This is image ${index}`
-    }));
-  }
+  imageHTML.push(image({
+    src: '/img/massive-burgers.jpg',
+    alt: 'monsterous burgers'
+  }));
+  // for (let index = 0; index < 5; index++) {
+  //   imageHTML.push( image({
+  //     src: `/img/${index}.jpg`,
+  //     alt: `This is image ${index}`
+  //   }));
+  // }
   return imageHTML.join('\n');
 }
 

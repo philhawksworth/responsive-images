@@ -1,4 +1,36 @@
+body {
+  margin:0;
+  padding:0;
+  text-align:center;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  text-align:left;
+  width: 280px;
+}
+
+
+@media (min-width: 400px) {
+  .wrapper {
+    width: 360px;
+  }
+}
+@media (min-width: 600px) {
+  .wrapper {
+    width: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  .wrapper {
+    width: 800px;
+  }
+}
+
+
 img {
   display: block;
   margin-bottom: 1em;
+  width:100%;
 }

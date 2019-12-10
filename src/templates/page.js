@@ -10,7 +10,9 @@ module.exports = (data) => `
   </head>
   <body>
     <h1>Responsive Images loaded lazily</h1>
+    <div class="wrapper">
     ${data.content}
+    </div>
   </body>
   </html>
 `;

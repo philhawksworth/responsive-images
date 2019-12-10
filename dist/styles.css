@@ -29,8 +29,18 @@ body {
 }
 
 
-img {
+picture {
+  overflow: hidden;
   display: block;
+  margin-bottom:1em;
+}
+
+img {
+  width: calc(100% + 40px);
+  margin: 0 -20px;
   margin-bottom: 1em;
-  width:100%;
+}
+
+picture.loading img {
+  filter: blur(20px);
 }

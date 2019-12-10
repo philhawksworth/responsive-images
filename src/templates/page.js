@@ -13,6 +13,7 @@ module.exports = (data) => `
     <div class="wrapper">
     ${data.content}
     </div>
+    <script src="/js/lazy.js" type="text/javascript"></script>
   </body>
   </html>
 `;

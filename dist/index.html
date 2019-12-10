@@ -11,18 +11,19 @@
   <body>
     <h1>Responsive Images loaded lazily</h1>
     <div class="wrapper">
-    <picture>
-  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=800 media="(min-width: 1000px)">
-  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=600" media="(min-width: 600px)">
-  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=360" media="(min-width: 400px)">
-  <img src="/img/sarnie-open.jpg?nf_resize=fit&w=280" alt="an open sandwich" />
+    <picture class="lazy">
+  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=20 media="(min-width: 1000px)">
+  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=20" media="(min-width: 600px)">
+  <source srcset="/img/sarnie-open.jpg?nf_resize=fit&w=20" media="(min-width: 400px)">
+  <img src="/img/sarnie-open.jpg?nf_resize=fit&w=20" alt="an open sandwich" />
 </picture>
-<picture>
-  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=800 media="(min-width: 1000px)">
-  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=600" media="(min-width: 600px)">
-  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=360" media="(min-width: 400px)">
-  <img src="/img/massive-burgers.jpg?nf_resize=fit&w=280" alt="monsterous burgers" />
+<picture class="lazy">
+  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=20 media="(min-width: 1000px)">
+  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=20" media="(min-width: 600px)">
+  <source srcset="/img/massive-burgers.jpg?nf_resize=fit&w=20" media="(min-width: 400px)">
+  <img src="/img/massive-burgers.jpg?nf_resize=fit&w=20" alt="monsterous burgers" />
 </picture>
     </div>
+    <script src="/js/lazy.js" type="text/javascript"></script>
   </body>
   </html>

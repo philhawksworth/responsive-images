@@ -35,7 +35,7 @@
 
 # Prep
 
-1. Get difference sized sandwich images
+1. trouble shoot n dev
 
 
 # Resources

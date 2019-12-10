@@ -8,7 +8,7 @@
 
 [[redirects]]
   from = "/img/small/:name"
-  to = "/img/:name?nf=resize&w=100"
+  to = "https://upbeat-kilby-9bc84c.netlify.com/img/:name?nf=resize&w=100"
   status = 302
 
 

@@ -42,7 +42,7 @@
 
 initial sandwiches
 
-widest - https://unsplash.com/photos/pw19GpDRZic
-wide -  https://unsplash.com/photos/cff_w0ADWIA
-large - https://unsplash.com/photos/rFYmnobNI6o
-small - https://unsplash.com/photos/VRB1LJoTZ6w
+- widest - https://unsplash.com/photos/pw19GpDRZic
+- wide -  https://unsplash.com/photos/cff_w0ADWIA
+- large - https://unsplash.com/photos/rFYmnobNI6o
+- small - https://unsplash.com/photos/VRB1LJoTZ6w

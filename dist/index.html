@@ -10,11 +10,47 @@
   </head>
   <body>
     <h1>Responsive Images loaded lazily</h1>
-    <img src="/img/sarnie-open.jpg" alt="an open sandwich" />
-<img src="/img/0.jpg" alt="This is image 0" />
-<img src="/img/1.jpg" alt="This is image 1" />
-<img src="/img/2.jpg" alt="This is image 2" />
-<img src="/img/3.jpg" alt="This is image 3" />
-<img src="/img/4.jpg" alt="This is image 4" />
+    <img srcset="/img/sarnie-open.jpg?nf_resize=fit&w=320 320w,
+             /img/sarnie-open.jpg?nf_resize=fit&w=480 480w,
+             /img/sarnie-open.jpg?nf_resize=fit&w=800 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="/img/sarnie-open.jpg?nf_resize=fit&w=480" alt="an open sandwich"></img>
+<img srcset="/img/0.jpg?nf_resize=fit&w=320 320w,
+             /img/0.jpg?nf_resize=fit&w=480 480w,
+             /img/0.jpg?nf_resize=fit&w=800 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="/img/0.jpg?nf_resize=fit&w=480" alt="This is image 0"></img>
+<img srcset="/img/1.jpg?nf_resize=fit&w=320 320w,
+             /img/1.jpg?nf_resize=fit&w=480 480w,
+             /img/1.jpg?nf_resize=fit&w=800 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="/img/1.jpg?nf_resize=fit&w=480" alt="This is image 1"></img>
+<img srcset="/img/2.jpg?nf_resize=fit&w=320 320w,
+             /img/2.jpg?nf_resize=fit&w=480 480w,
+             /img/2.jpg?nf_resize=fit&w=800 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="/img/2.jpg?nf_resize=fit&w=480" alt="This is image 2"></img>
+<img srcset="/img/3.jpg?nf_resize=fit&w=320 320w,
+             /img/3.jpg?nf_resize=fit&w=480 480w,
+             /img/3.jpg?nf_resize=fit&w=800 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="/img/3.jpg?nf_resize=fit&w=480" alt="This is image 3"></img>
+<img srcset="/img/4.jpg?nf_resize=fit&w=320 320w,
+             /img/4.jpg?nf_resize=fit&w=480 480w,
+             /img/4.jpg?nf_resize=fit&w=800 800w"
+     sizes="(max-width: 320px) 280px,
+            (max-width: 480px) 440px,
+            800px"
+     src="/img/4.jpg?nf_resize=fit&w=480" alt="This is image 4"></img>
   </body>
   </html>

@@ -5,6 +5,10 @@ const image = require('./templates/image.js');
 
 const images = function() {
   let imageHTML = [];
+  imageHTML.push(image({
+    src: '/img/sarnie-open.jpg',
+    alt: 'an open sandwich'
+  }));
   for (let index = 0; index < 5; index++) {
     imageHTML.push( image({
       src: `/img/${index}.jpg`,
